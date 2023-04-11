@@ -1,0 +1,13 @@
+name: First workflow
+# when should this wf run?
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    # define runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
